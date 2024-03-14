@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+    <title>Document</title>
+    <style>
+        :root{
+            
+        --cor-fundo-clara: #ffffff;
+        --cor-fundo-escura: #000000;
+        --cor-texto-clara: #000000;
+
+        }
+
+        .container{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           height:100vh;
+        }
+
+        h2{
+            width: 800px;
+            text-align: justify;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .dark-mod{
+            background-color: var(--cor-fundo-escura);
+        }
+
+        .claro-mode{
+            color: var(--cor-fundo-clara);
+        }
+
+        .icon{
+            font-size: 30px;
+           
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <i class="fa-solid fa-circle-half-stroke icon" onclick="escuroClaro()"></i>
+    <div class="container">
+      <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea molestias hic, adipisci minima quisquam velit alias sit eum iusto vel impedit reprehenderit est non ad, voluptatum suscipit. Tempore, voluptas?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, laborum veritatis qui ratione, commodi soluta labore animi adipisci voluptatibus, id unde voluptates incidunt? Ipsum dolore incidunt dolorum asperiores veniam illum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore quidem tenetur asperiores fuga et numquam quas assumenda impedit ipsam atque totam quod, animi corrupti? Perferendis suscipit distinctio ullam quis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odio deserunt facilis a nesciunt voluptatibus voluptate amet dolorum, repudiandae quis accusamus maxime minus dolore delectus quod repellat, asperiores atque ipsum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum asperiores delectus ipsa quasi deserunt debitis incidunt. Eos error architecto dolore totam, ratione corrupti, ab molestias doloribus voluptatum quibusdam voluptatem.
+        </h2>
+    </div>
+    
+    <script>
+        function escuroClaro(){
+            let icon = document.querySelector('.icon')
+            icon.classList.toggle('claro-mode')
+            let texto = document.querySelector('h2')
+            texto.classList.toggle('claro-mode')
+            let modo = document.body.classList.toggle('dark-mod')
+        
+        }
+    
+    </script>
+</body>
+</html>
